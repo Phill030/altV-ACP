@@ -26,14 +26,15 @@
 		"@altv/types-shared": "^1.2.6",
 		"@altv/types-webview": "^1.0.2",
 		"@types/node": "^18.0.3",
+		"@vitejs/plugin-vue": "^2.3.3",
 		"typescript": "^4.7.4",
 		"vite": "^2.9.14",
 		"vue": "^3.2.37",
-		"@vitejs/plugin-vue": "^2.3.3",
 		"vue-tsc": "^0.34.7"
 	},
 	"dependencies": {
-		"vue": "^3.2.25"
+		"vue": "^3.2.25",
+		"vue-router": "^4.1.1"
 	},
 	"type": "module"
 }
