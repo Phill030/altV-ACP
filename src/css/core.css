@@ -1,4 +1,31 @@
-root {
-    --color1: #ffffff;
-    /*  */
+:root {
+    --background: #292D36;
+    --bg: #141417;
+    --primary: #494C53;
+    --accent: #DCE2F2;
+    --select: #586070;
+}
+
+@font-face {
+    font-family: interb;
+    src: url('../../public/assets/fonts/Inter-Bold.ttf');
+}
+
+@font-face {
+    font-family: interl;
+    src: url('../../public/assets/fonts/Inter-Light.ttf');
+}
+
+@font-face {
+    font-family: interm;
+    src: url('../../public/assets/fonts/Inter-Medium.ttf');
+}
+
+@font-face {
+    font-family: interr;
+    src: url('../../public/assets/fonts/Inter-Regular.ttf');
+}
+
+* {
+    user-select: none;
 }

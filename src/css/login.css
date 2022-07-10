@@ -1,0 +1,87 @@
+body {
+    background-color: var(--background);
+    display: flex;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+    justify-content: center;
+}
+
+.loginframe {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--bg);
+    width: 28em;
+    height: 42rem;
+    border-radius: 2.5rem;
+    filter: drop-shadow(0px 0px 10px #141417);
+    background-image: url('../../public/assets/Vector.svg');
+    background-repeat: no-repeat;
+    background-position: top 3rem center;
+    background-size: 10rem;
+    align-items: center;
+}
+
+.tlt-txt {
+    position: relative;
+    color: var(--accent);
+    font-family: interb;
+    font-size: 1.8rem;
+    text-align: center;
+    top: 10.5rem;
+}
+
+.lgn-txt {
+    position: relative;
+    color: var(--accent);
+    font-family: interb;
+    font-size: 1.1rem;
+    text-align: center;
+    top: 13rem;
+}
+
+ .u-npt {
+    position: relative;
+    width: 24rem;
+    height: 3.5rem;
+    border-radius: 0.5rem;
+    color: white;
+    font-family: interb;
+    font-size: 1.1rem;
+}
+
+.p-npt {
+    position: relative;
+    width: 24rem;
+    height: 3.5rem;
+    border-radius: 0.5rem;
+    color: white;
+    font-family: interb;
+    font-size: 1.1rem;
+    margin-top: 1.5rem;
+}
+
+.bttn-sbmt {
+    position: relative;
+    width: 3.2rem;
+    height: 3.2rem;
+    right: 0;
+    margin-top: 5.5rem;
+    align-self: flex-end;
+    justify-self: flex-end;
+}
+
+.bttn-sbmt .arr-rght {
+    filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(7446%) hue-rotate(210deg) brightness(107%) contrast(111%);
+}
+
+form {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    top: 14rem;
+    align-items: center;
+    justify-content: center;
+}
