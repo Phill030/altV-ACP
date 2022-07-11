@@ -56,9 +56,12 @@ export default defineComponent({
     },
   },
   components: { CInput, CButton },
+  beforeCreate: function () {
+    document.body.className = `${this.$route.name?.toString().toLowerCase()}`;
+  },
 });
 </script>
 
-<style>
+<style scoped>
 @import "../css/login.css";
 </style>

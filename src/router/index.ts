@@ -31,11 +31,9 @@ router.beforeEach(async (to, from, next) => {
 
   const isLoggedIn = await checkToken(key as string);
 
-  if(!authRequired && isLoggedIn) return next('/panel');
+  if (!authRequired && isLoggedIn) return next("/panel");
 
-  if (authRequired && !isLoggedIn) {
-    return next("/login");
-  }
+  if (authRequired && !isLoggedIn) return next("/login");
 
   next();
 });

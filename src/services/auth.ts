@@ -10,7 +10,7 @@ export async function checkToken(token: string) {
   });
 
   if (response.status === 401 || response.status === 403) {
-    localStorage.removeItem("key");
+    localStorage.clear();
     return false;
   }
 

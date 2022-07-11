@@ -1,13 +1,3 @@
-body {
-    background-color: var(--background);
-    display: flex;
-    height: 100vh;
-    margin: 0;
-    padding: 0;
-    align-items: center;
-    justify-content: center;
-}
-
 .loginframe {
     position: relative;
     display: flex;
@@ -18,7 +8,7 @@ body {
     overflow: hidden;
     border-radius: 2.5rem;
     filter: drop-shadow(0px 0px 10px #141417);
-    background-image: url('../../public/assets/Vector.svg');
+    background-image: url("../../public/assets/Vector.svg");
     background-repeat: no-repeat;
     background-position: top 3rem center;
     background-size: 10rem;
@@ -43,7 +33,7 @@ body {
     margin-top: 2rem;
     margin-bottom: 0;
     padding: 0rem 1.4rem 0rem 1.4rem;
-} 
+}
 
 .lgn-txt {
     position: relative;
@@ -54,7 +44,7 @@ body {
     margin-top: 1rem;
 }
 
- .u-npt {
+.u-npt {
     position: relative;
     width: 24rem;
     height: 3.5rem;
@@ -88,7 +78,8 @@ body {
 }
 
 .bttn-sbmt .arr-rght {
-    filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(7446%) hue-rotate(210deg) brightness(107%) contrast(111%);
+    filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(7446%)
+        hue-rotate(210deg) brightness(107%) contrast(111%);
 }
 
 form {

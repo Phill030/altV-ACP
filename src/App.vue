@@ -3,5 +3,5 @@
 </template>
 
 <style>
-@import './css/core.css';
+  @import "./css/core.css";
 </style>
