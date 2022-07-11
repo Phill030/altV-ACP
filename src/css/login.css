@@ -14,7 +14,8 @@ body {
     flex-direction: column;
     background-color: var(--bg);
     width: 28em;
-    height: 42rem;
+    min-height: 40rem;
+    overflow: hidden;
     border-radius: 2.5rem;
     filter: drop-shadow(0px 0px 10px #141417);
     background-image: url('../../public/assets/Vector.svg');
@@ -30,8 +31,19 @@ body {
     font-family: interb;
     font-size: 1.8rem;
     text-align: center;
-    top: 10.5rem;
+    margin-top: 12rem;
+    margin-bottom: 0;
 }
+
+.err-txt {
+    position: relative;
+    color: rgb(209, 57, 57);
+    font-family: interb;
+    font-size: 1rem;
+    margin-top: 2rem;
+    margin-bottom: 0;
+    padding: 0rem 1.4rem 0rem 1.4rem;
+} 
 
 .lgn-txt {
     position: relative;
@@ -39,7 +51,7 @@ body {
     font-family: interb;
     font-size: 1.1rem;
     text-align: center;
-    top: 13rem;
+    margin-top: 1rem;
 }
 
  .u-npt {
@@ -50,6 +62,7 @@ body {
     color: white;
     font-family: interb;
     font-size: 1.1rem;
+    text-indent: 1.3rem;
 }
 
 .p-npt {
@@ -61,6 +74,7 @@ body {
     font-family: interb;
     font-size: 1.1rem;
     margin-top: 1.5rem;
+    text-indent: 1.3rem;
 }
 
 .bttn-sbmt {
@@ -81,7 +95,8 @@ form {
     position: relative;
     display: flex;
     flex-direction: column;
-    top: 14rem;
     align-items: center;
     justify-content: center;
+    margin-top: 1rem;
+    padding-bottom: 1.2rem;
 }
