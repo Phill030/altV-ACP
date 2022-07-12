@@ -8,13 +8,17 @@ const routes = [
     path: "/login",
     name: "Login",
     component: Login,
-    meta: { requiresAuth: false },
+    meta: {
+      requiresAuth: false,
+    },
   },
   {
     path: "/panel",
     name: "Panel",
     component: Panel,
-    meta: { requiresAuth: true },
+    meta: {
+      requiresAuth: true,
+    },
   },
 ];
 
@@ -23,8 +27,10 @@ const router = createRouter({
   routes,
 });
 
+// Middleware
 router.beforeEach(async (to, from, next) => {
   const authRequired = to.meta.requiresAuth;
+
   const key = localStorage.getItem("key");
 
   if (!key && authRequired) return next("/login");
