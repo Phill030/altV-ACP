@@ -1,18 +1,47 @@
 <template>
-    <sidebar></sidebar>
+  <div class="content">
+    <CSidebar class="sidebar" @idxchange="idxChange"></CSidebar>
+    <div class="main">
+      <div class="components">
+        <component v-bind:is="comps[currIdx]"/>
+      </div>
+    </div>
+  </div>
 </template>
 
 <script lang="ts">
 import { defineComponent } from "vue";
-import Sidebar from "../components/Sidebar.vue";
+import CSidebar from "../components/CSidebar.vue";
+import Home from "../components/Home.vue";
+import Players from "../components/Players.vue";
+import Resources from "../components/Resources.vue";
+import Discord from "../components/Discord.vue";
+import Map from "../components/Map.vue";
+import Vehicles from "../components/Vehicles.vue";
+
 export default defineComponent({
   data() {
-    return {};
+    return {
+      currIdx: 1,
+      comps: [
+        Home,
+        Players,
+        Resources,
+        Discord,
+        Map,
+        Vehicles,
+      ],
+    };
   },
   beforeMount: function () {
     document.body.className = `${this.$route.name?.toString().toLowerCase()}`;
   },
-  components: { Sidebar }
+  methods: {
+    idxChange(i: number) {
+      this.currIdx = i;
+    }
+  },
+  components: { CSidebar, Players, Map, Vehicles },
 });
 </script>
 
