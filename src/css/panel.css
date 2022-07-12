@@ -1,0 +1,22 @@
+.sidebar {
+    position: relative;
+}
+
+.content {
+    position: relative;
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    flex-direction: row;
+}
+
+.content .main {
+    position: relative;
+    display: flex;
+    width: calc(100vw - 22rem);
+    height: 100vh;
+}
+
+.components {
+    display: flex;
+}
