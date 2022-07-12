@@ -1,0 +1,76 @@
+.list {
+    position: relative;
+    justify-self: center;
+    align-self: center;
+    display: flex;
+    margin-left: 1rem;
+    width: calc(100vw - 30rem);
+    height: calc(100vh - 10rem);
+
+    flex-direction: row;
+    overflow-y: auto;
+    overflow-x: hidden;
+    align-content: flex-start;
+    flex-wrap: wrap;
+}
+
+.list .card {
+    margin-left: 2rem;
+    margin-top: 1rem;
+    margin-bottom: 0;
+    border-radius: 1.5rem;
+}
+
+.list::-webkit-scrollbar {
+    width: 2px;
+    height: 2px;
+}
+.list::-webkit-scrollbar-button {
+    width: 0px;
+    height: 0px;
+}
+.list::-webkit-scrollbar-thumb {
+    background: #e1e1e1;
+    border: 0px none #ffffff;
+    border-radius: 50px;
+}
+.list::-webkit-scrollbar-thumb:hover {
+    background: #1d2027;
+}
+.list::-webkit-scrollbar-thumb:active {
+    background: #141417;
+}
+.list::-webkit-scrollbar-track {
+    background: #666666;
+    border: 0px none #ffffff;
+    border-radius: 50px;
+}
+.list::-webkit-scrollbar-track:hover {
+    background: #666666;
+}
+.list::-webkit-scrollbar-track:active {
+    background: #333333;
+}
+.list::-webkit-scrollbar-corner {
+    background: transparent;
+}
+
+.vlery {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #00000071;
+    z-index: 9;
+}
+
+.vlery-enter-active,
+.vlery-leave-active {
+  transition: opacity 0.5s ease;
+}
+
+.vlery-enter-from,
+.vlery-leave-to {
+  opacity: 0;
+}
