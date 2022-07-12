@@ -1,0 +1,26 @@
+.card {
+    position: relative;
+    width: 20rem;
+    height: 12rem;
+    background-color: var(--bg);
+    cursor: pointer;
+}
+
+.name {
+    position: relative;
+    color: white;
+    font-family: interb;
+    font-size: 1.5rem;
+    text-align: center;
+    margin-top: 0rem;
+}
+
+.entry {
+    position: relative;
+    color: white;
+    font-family: interb;
+    font-size: 1rem;
+    margin-left: 0.5rem;
+    margin-top: 0;
+    margin-bottom: 0;
+}
