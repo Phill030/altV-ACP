@@ -27,12 +27,22 @@
     src: url('../../public/assets/fonts/Inter-Regular.ttf');
 }
 
+@font-face {
+    font-family: pjs-b;
+    src: url('../../public/assets/fonts/PlusJakartaSans-Bold.ttf');
+}
+
+@font-face {
+    font-family: sfpro;
+    src: url('../../public/assets/fonts/SFPro.ttf');
+}
+
 * {
     user-select: none;
 }
 
 body.panel {
-    background-color: var(--background);
+    background-color: #1d1f20;
     margin: 0;
     padding: 0;
     display: flex;
