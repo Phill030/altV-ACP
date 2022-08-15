@@ -16,9 +16,9 @@
 
 .list .card {
     margin-left: 2rem;
-    margin-top: 1rem;
+    margin-top: 2rem;
     margin-bottom: 0;
-    border-radius: 1.5rem;
+
 }
 
 .list::-webkit-scrollbar {
@@ -72,5 +72,15 @@
 
 .vlery-enter-from,
 .vlery-leave-to {
+  opacity: 0;
+}
+
+.snwflk-enter-active,
+.snwflk-leave-active {
+  transition: opacity 0.5s ease;
+}
+
+.snwflk-enter-from,
+.snwflk-leave-to {
   opacity: 0;
 }
