@@ -1,5 +1,5 @@
 :root {
-    --background: #292D36;
+    --background: #1c1c1e;
     --bg: #141417;
     --primary: #494C53;
     --accent: #DCE2F2;
@@ -42,7 +42,7 @@
 }
 
 body.panel {
-    background-color: #1d1f20;
+    background-color: var(--background);
     margin: 0;
     padding: 0;
     display: flex;
