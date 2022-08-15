@@ -1,26 +1,120 @@
 .card {
     position: relative;
-    width: 20rem;
-    height: 12rem;
-    background-color: var(--bg);
+    width: 20.3rem;
+    height: 12.5rem;
+    background-color: #1e2223;
+    outline: 1px solid #8484845b;
     cursor: pointer;
+    box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.35);
+    border-radius: 1rem;
+}
+
+.inner {
+    padding: 0.8rem 1rem 0.8rem 1rem;
+}
+
+
+.ttl {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    height: 2.8rem;    
 }
 
 .name {
     position: relative;
     color: white;
-    font-family: interb;
-    font-size: 1.5rem;
-    text-align: center;
-    margin-top: 0rem;
+    font-family: pjs-b;
+    font-weight: 700;
+    font-size: 1.6rem;
+    margin: 0;
 }
 
-.entry {
+.id {
     position: relative;
-    color: white;
-    font-family: interb;
-    font-size: 1rem;
-    margin-left: 0.5rem;
-    margin-top: 0;
-    margin-bottom: 0;
+    color: #484F51;
+    font-family: sfpro;
+    font-weight: 700;
+    font-size: 1.35rem;
+    margin-top: 0.4rem;
+    margin-left: 0.6rem;
 }
+
+.content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: calc(100% - 3.8rem);
+}
+
+.content .ping {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+}
+
+.content .keytxt {
+    margin: 0;
+    color: #B4B4B4;
+    font-weight: 400;
+    font-size: 1.4rem;
+    font-family: sfpro;
+}
+
+.content .valuetxt {
+    font-weight: 700;
+    color: #CCCCCC;
+}
+
+/* draw a small green circle in the class circle */
+.circle {
+    position: relative;
+    width: 0.6rem;
+    height: 0.6rem;
+    border-radius: 50%;
+    background-color: #30D158;
+    margin-left: 0.7rem;
+    margin-top: 0.3rem;
+    align-self: center;
+}
+
+.card:hover {
+    /* outline: 2px solid #4175c4 */
+    animation: opIn 0.1s forwards;
+}
+
+.copyId {
+    position: relative;
+    color: #6B53F5;
+    border: 1px solid #6B53F5;
+    border-radius: 0.3rem;
+    font-weight: 700;
+    font-family: sfpro;
+    font-size: 1.3rem;
+    background-color: unset;
+    margin-top: 0.5rem;
+    width: 5.5rem;
+    height: 2.5rem;
+    align-self: center;
+    cursor: pointer;
+}
+
+.copyId:hover {
+    background-color: #6b53f525;
+}
+
+@keyframes opIn {
+    0% {
+        outline: 1px solid #8484845b;
+    }
+    100% {
+        outline: 2px solid #4175c4
+    }
+}
+
+/* COLORS:
+#30D158 - green
+#ff9f0a - orange
+#FF453A - red
+*/
