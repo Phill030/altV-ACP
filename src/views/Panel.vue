@@ -10,7 +10,7 @@
 </template>
 
 <script lang="ts">
-import { defineComponent } from "vue";
+import { defineComponent, markRaw } from "vue";
 import CSidebar from "../components/CSidebar.vue";
 import Home from "../components/Home.vue";
 import Players from "../components/Players.vue";
@@ -22,14 +22,14 @@ import Vehicles from "../components/Vehicles.vue";
 export default defineComponent({
   data() {
     return {
-      currIdx: 1,
+      currIdx: 0,
       comps: [
-        Home,
-        Players,
-        Resources,
-        Discord,
-        Map,
-        Vehicles,
+        markRaw(Home),
+        markRaw(Players),
+        markRaw(Resources),
+        markRaw(Discord),
+        markRaw(Map),
+        markRaw(Vehicles),
       ],
     };
   },
