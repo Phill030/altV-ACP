@@ -8,13 +8,15 @@
       :data="i"
       :key="idx"
       class="card"
-      @click="toggleSnow(idx)"
+      @cardClick="toggleSnow(idx)"
     />
   </div>
   <Transition name="vlery">
     <div class="vlery" v-if="snow != undefined" @click="disableSnow" />
   </Transition>
-  <CCardSnowflake v-if="snow != undefined" :data="Object(snow)" />
+  <Transition name="snwflk">
+    <CCardSnowflake v-if="snow != undefined" :data="Object(snow)" />
+  </Transition>
 </template>
 
 <script lang="ts">
@@ -26,19 +28,7 @@ import CCardSnowflake from "./CCardSnowflake.vue";
 export default defineComponent({
   data() {
     return {
-      players: [
-        { id: 0, name: 'PlayerX'},
-        { id: 4 },
-        { id: 3 },
-        { id: 7 },
-        { id: 6 },
-        { id: 5 },
-        { id: 2 },
-        { id: 1 },
-        { id: 8 },
-        { id: 10 },
-        { id: 9 },
-      ] as unknown as Player[],
+      players: players as unknown as Player[],
       snow: undefined as unknown,
     };
   },
@@ -52,6 +42,36 @@ export default defineComponent({
   },
   components: { PlayerCard, CCardSnowflake },
 });
+
+function randomAlphaNumeric() {
+  return (
+    Math.random().toString(36).substring(2, 15) +
+    Math.random().toString(36).substring(2, 15)
+  );
+}
+
+function random(min: number, max: number) {
+  return Math.floor(Math.random() * (max - min + 1)) + min;
+}
+
+function randomIP() {
+  const randomFrom0To255 = () => Math.floor(Math.random() * 256);
+  return `${randomFrom0To255()}.${randomFrom0To255()}.${randomFrom0To255()}.${randomFrom0To255()}`;
+}
+
+const players = Array(10)
+  .fill(undefined)
+  .map((v, i) => {
+    return {
+      id: i,
+      name: `Player${i}`,
+      discordId: Math.floor(Math.random() * 999999999999999).toString(),
+      hwid: randomAlphaNumeric(),
+      ip: randomIP(),
+      ping: random(0, 500),
+      scid: randomAlphaNumeric(),
+    };
+  });
 </script>
 
 <style scoped>
