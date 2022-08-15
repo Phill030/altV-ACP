@@ -36,7 +36,7 @@ export default defineComponent({
   data() {
     return {
       collapsed: false,
-      active: -1,
+      active: 0,
       resources: [
         {
           name: "Home",
