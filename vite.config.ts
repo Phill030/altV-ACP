@@ -10,6 +10,7 @@ export default defineConfig({
     outDir: 'dist/',
     emptyOutDir: true
   },
+  // publicDir: 'public/assets/',
   resolve: {
     alias: [
       {
