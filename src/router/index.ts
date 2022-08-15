@@ -3,9 +3,10 @@ import { checkToken } from "../services/auth";
 import Login from "../views/Login.vue";
 import Panel from "../views/Panel.vue";
 
+// Router
 const routes = [
   {
-    path: "/login",
+    path: "/",
     name: "Login",
     component: Login,
     meta: {
@@ -33,13 +34,11 @@ router.beforeEach(async (to, from, next) => {
 
   const key = localStorage.getItem("key");
 
-  if (!key && authRequired) return next("/login");
+  if (!key && authRequired) return next("/");
 
   const isLoggedIn = await checkToken(key as string);
-
   if (!authRequired && isLoggedIn) return next("/panel");
-
-  if (authRequired && !isLoggedIn) return next("/login");
+  if (authRequired && !isLoggedIn) return next("/");
 
   next();
 });
