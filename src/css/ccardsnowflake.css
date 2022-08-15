@@ -1,23 +1,135 @@
 .snowflake {
     position: fixed;
+    display: flex;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 30vw;
-    height: 40vh;
-    border-radius: 1.5rem;
-    background-color: #373742;
+    border-radius: 1rem;
+    background-color: #1e2223;
+    outline: 1px solid #8484845b;
     z-index: 10;
+    padding: 0.8rem 1rem 0.8rem 1rem;
+}
+
+.main {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.ttl {
+    position: relative;
     display: flex;
     flex-direction: row;
-    justify-content: center;
 }
 
 .name {
     position: relative;
     color: white;
-    font-family: interb;
-    font-size: 1.5rem;
-    margin-top: 0.4rem;
+    font-family: pjs-b;
+    font-weight: 700;
+    font-size: 2.2rem;
+    margin: 0;
+}
+
+.id {
+    position: relative;
+    color: #484F51;
+    font-family: sfpro;
+    font-weight: 700;
+    font-size: 1.35rem;
+    margin-top: 0.9rem;
+    margin-left: 0.6rem;
+}
+
+.content {
+    position: relative;
     display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}
+
+.content .ping {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+}
+
+.content .keytxt {
+    display: flex;
+    margin: 0;
+    color: #B4B4B4;
+    font-weight: 400;
+    font-size: 1.4rem;
+    font-family: sfpro;
+    margin-top: 1rem;
+}
+
+.content .valuetxt {
+    font-weight: 700;
+    color: #CCCCCC;
+}
+
+.keybtn {
+    position: relative;
+    color: #6B53F5;
+    border: 1px solid #6B53F5;
+    border-radius: 0.3rem;
+    font-weight: 700;
+    font-family: sfpro;
+    font-size: 0.8rem;
+    background-color: unset;
+    width: 2.7rem;
+    height: 1.5rem;
+    cursor: pointer;
+    text-align: center;
+    margin-left: 0.8rem;
+    margin-top: 0;
+}
+
+.keybtn:hover {
+    background-color: #6b53f525;
+}
+
+.circle {
+    position: relative;
+    width: 0.6rem;
+    height: 0.6rem;
+    border-radius: 50%;
+    background-color: #30D158;
+    margin-left: 0.7rem;
+    margin-top: 1.3rem;
+    align-self: center;
+}
+
+.btns {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 0.5rem;
+    width: 100%;
+    height: 3.8rem;
+}
+
+.action {
+    position: relative;
+    color: #6B53F5;
+    border: 1px solid #6B53F5;
+    border-radius: 0.3rem;
+    font-weight: 700;
+    font-family: sfpro;
+    font-size: 1.2rem;
+    background-color: unset;
+    min-width: 5rem;
+    height: 2.5rem;
+    cursor: pointer;
+    text-align: center;
+    margin-left: 0.75rem;
+}
+
+.action:hover {
+    background-color: #6b53f525;
 }
