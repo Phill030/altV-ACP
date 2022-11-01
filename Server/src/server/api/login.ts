@@ -5,7 +5,7 @@ import jwt from "jsonwebtoken";
 import config from "../config";
 import * as bcrypt from "bcrypt";
 
-export async function login(req, res) {
+export async function login(req: any, res: any) {
     const { username, password } = req.body;
 
     const userDb = await Database.fetchAllData<User>(Collections.USERS);
